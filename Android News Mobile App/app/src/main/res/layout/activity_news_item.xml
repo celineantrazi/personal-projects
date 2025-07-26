@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    this layout file defines a single item in the RecyclerView
+    each item represents a news article and displays its details
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/articleImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Article Image" />
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Article Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/articleAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Author"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="4dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/articleSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source Name"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/articlePublishedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Published: 2025-07-24"
+        android:textSize="12sp"
+        android:textColor="@android:color/secondary_text_light"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/articleDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Short Description..."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/articleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full content of the article..."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
